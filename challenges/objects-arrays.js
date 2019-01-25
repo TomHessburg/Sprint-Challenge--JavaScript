@@ -194,4 +194,4 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
-console.log("=======begin objects-arrays section=======");
+console.log("=======end objects-arrays section=======");
