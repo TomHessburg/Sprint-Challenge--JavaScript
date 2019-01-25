@@ -29,12 +29,17 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-
+            The biggest different between forEach and map is that forEach modifies the original array and map returns a new array without modifying the original
 2. What is the difference between a function and a method?
-
+            a method is a function that is attached to an object(a value in a key/value pair). Methods can only be called on instances of that object (including children via inheritence).
 3. What is closure?
-
+            So in short, closure is the idea that a nested function has access to its parents variables via "lexical scoping". Now this dosnt seem like much, but what needs to be understood is that when a function is called, its variables cease to exist after the function call is complete. if there is a nested function inside of that function, it will enclose the variable that it needs and retain the ability to use it, independent of its parent function being called.
 4. Describe the four rules of the 'this' keyword.
+            explicit:explicit essentially means that we control it. any time that we see apply, bind, or call, its explicit binding.
+            implicit: whenever we call a method, the object before the method in the call is what is looked at as "this". 
+            window: When in global scope, the value of this is the entire window
+            new: in a "new" binding, this refers to the object that is being created via the "new" keywords, which is a child of a constructor function where "this" is being used. i.e. the ocnstructor function say "this.name = attribute.name;". when we pass in a value in our new object like "name: 'sarah'", the this keyword pertaing to that new object.
+
 
 5. Why do we need super() in an extended class?
 
